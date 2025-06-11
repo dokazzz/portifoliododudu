@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajude Maria - Venda Solidária</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2><i class="fas fa-heart"></i> Ajude Maria</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#historia" class="nav-link">História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#produtos" class="nav-link">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#como-ajudar" class="nav-link">Como Ajudar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Ajude Maria na luta contra o câncer</h1>
+                <p>Maria, de 1 ano de idade, luta contra o câncer.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>R$ 30.000</h3>
+                        <p>Meta para o tratamento</p>
+                    </div>
+                    <div class="stat">
+                        <h3>4</h3>
+                        <p>Produtos disponíveis</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Do valor para o tratamento</p>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="cta-button primary" onclick="scrollToSection('produtos')">
+                        <i class="fas fa-shopping-cart"></i> Ver Produtos
+                    </button>
+                    <button class="cta-button secondary" onclick="scrollToSection('como-ajudar')">
+                        <i class="fas fa-hand-holding-heart"></i> Outras Formas de Ajudar
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="C:\Users\dorne\OneDrive\Área de Trabalho\Ajude A Maria\maria.jpg" alt="Maria">
+                <div class="hero-badge">
+                    <i class="fas fa-ribbon"></i>
+                    <span>Luta contra o câncer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- História Section -->
+    <section id="historia" class="historia">
+        <div class="container">
+            <h2 class="section-title">A História de Maria</h2>
+           
+            <div class="historia-content">
+                <div class="historia-text">
+                    <div class="historia-card">
+                        <div class="historia-header">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="historia-title">
+                    <h3>Maria, a criança que desenvolveu um câncer estágio 4 com 1 ano de vida</h3>       
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p> Precisamos da sua ajuda.
+                            Nossa loja está vendendo todos os produtos a preço de custo. E o motivo é muito maior do que qualquer lucro: estamos tentando arrecadar o máximo possível para ajudar uma criança de apenas 4 anos, que está lutando contra o câncer.
+                            Ela está passando por um tratamento difícil e caro. Cada dia é uma batalha, e cada centavo faz diferença. Por isso, toda a renda será 100% destinada à família dessa pequena guerreira, para ajudar com exames, medicamentos, deslocamentos e o que mais for necessário. 
+                            Ao comprar conosco agora, você não está apenas levando um produto para casa. Você está estendendo a mão para uma família que precisa. Está fazendo parte de uma corrente de solidariedade e esperança.====Se você não puder comprar, entenda: compartilhar essa mensagem também ajuda muito.
+                            Contamos com você. Vamos juntos fazer a diferença.  </p>
+                </div>
+                <div class="historia-image">
+                    <div class="progresso-tratamento">
+                        <h4>Progresso do Tratamento</h4>
+                        <div class="barra-progresso">
+                            <div class="progresso-atual" style="width: 7%;">7%</div>
+                        </div>
+                        <p>2 de diversas sessões de quimioterapia que ela  terá que fazer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2 class="section-title">Produtos à Venda</h2>
+            <p class="section-description">Todos os produtos estão em excelente estado de conservação e com garantia. 100% do valor arrecadado será destinado ao tratamento de Maria.</p>
+            
+            <div class="produtos-grid">
+                <!-- TV -->
+                <div class="produto-card">
+                    <div class="produto-badge urgente">Urgente</div>
+                    <div class="produto-image">
+                        <img src="https://carrefourbr.vtexassets.com/arquivos/ids/176572786/smart-tv-samsung-65-polegadas-4k-uhd-crystal-4k-gaming-hub-alexa-65du7700-1.jpg?v=638652972714270000" alt="Smart TV 50 polegadas">
+                        <div class="produto-overlay">
+                            <button class="btn-detalhes" onclick="mostrarDetalhes('tv')">
+                                <i class="fas fa-eye"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Smart TV 65" 4K</h3>
+                        <div class="produto-specs">
+                            <span><i class="fas fa-tv"></i> 65 polegadas</span>
+                            <span><i class="fas fa-hd-video"></i> 4K Ultra HD</span>
+                            <span><i class="fas fa-wifi"></i> Smart TV</span>
+                        </div>
+                        <p class="produto-descricao">Smart TV Samsung 65" com resolução 4K, HDR, Wi-Fi integrado e controle por voz.</p>
+                        <div class="produto-estado">
+                            <div class="estado-bar">
+                                <div class="estado-fill" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 3.349,00</span>
+                            <span class="preco-atual">R$ 399,90</span>
+                            <span class="economia">Economia: R$ 2.949,10</span>
+                        </div>
+                        <button class="btn-comprar" onclick="interesseCompra('Smart TV Samsung 65 4K', '399,90')">
+                            <i class="fas fa-heart"></i> Quero Ajudar Comprando
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Air Fryer -->
+                <div class="produto-card">
+                    <div class="produto-badge popular">Mais Procurada</div>
+                    <div class="produto-image">
+                        <img src="https://philco.vtexassets.com/arquivos/ids/250352-1200-1200?v=638544121435570000&width=1200&height=1200&aspect=true" alt="Air Fryer 5.5L">
+                        <div class="produto-overlay">
+                            <button class="btn-detalhes" onclick="mostrarDetalhes('airfryer')">
+                                <i class="fas fa-eye"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Air Fryer 5.5L</h3>
+                        <div class="produto-specs">
+                            <span><i class="fas fa-weight"></i> 5.5 Litros</span>
+                            <span><i class="fas fa-digital-tachograph"></i> Display Digital</span>
+                            <span><i class="fas fa-clock"></i> Timer</span>
+                        </div>
+                        <p class="produto-descricao">Air Fryer Britânia 5,5L Antiaderente Gold 1500W BFR51.</p>
+                        <div class="produto-estado">
+                            <div class="estado-bar">
+                                <div class="estado-fill" style="width: 90%;"></div>
+                            </div>
+                        
+                        </div>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 319,90</span>
+                            <span class="preco-atual">R$ 39,90</span>
+                            <span class="economia">Economia: R$ 280</span>
+                        </div>
+                        <button class="btn-comprar" onclick="interesseCompra('Air Fryer 5.5L', '39,90')">
+                            <i class="fas fa-heart"></i> Quero Ajudar Comprando
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Microondas -->
+                <div class="produto-card">
+                    <div class="produto-badge oferta">Oferta</div>
+                    <div class="produto-image">
+                        <img src="https://m.media-amazon.com/images/I/41kh2TI9f0L._AC_SX679_.jpg" alt="Microondas 30L">
+                        <div class="produto-overlay">
+                            <button class="btn-detalhes" onclick="mostrarDetalhes('microondas')">
+                                <i class="fas fa-eye"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Microondas 20L</h3>
+                        <div class="produto-specs">
+                            <span><i class="fas fa-microchip"></i> 20 Litros</span>
+                            <span><i class="fas fa-bolt"></i> 900W</span>
+                            <span><i class="fas fa-cog"></i> 10 Potências</span>
+                        </div>
+                        <p class="produto-descricao">Forno Micro-ondas 20L Preto Midea 220V MRAS22.</p>
+                        <div class="produto-estado">
+                            <div class="estado-bar">
+                                <div class="estado-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 399,99</span>
+                            <span class="preco-atual">R$ 29,90</span>
+                            <span class="economia">Economia: R$ 370,09</span>
+                        </div>
+                        <button class="btn-comprar" onclick="interesseCompra('Micro-ondas 20L', '29,90')">
+                            <i class="fas fa-heart"></i> Quero Ajudar Comprando
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Geladeira -->
+                <div class="produto-card">
+                    <div class="produto-badge premium">Premium</div>
+                    <div class="produto-image">
+                        <img src="https://a-static.mlcdn.com.br/800x560/refrigerador-philco-413-litros-top-mounted-prf501ti/britania/23040/8f31b152bb4254066cf809da2d08ae45.jpeg" alt="Geladeira Duplex 400L">
+                        <div class="produto-overlay">
+                            <button class="btn-detalhes" onclick="mostrarDetalhes('geladeira')">
+                                <i class="fas fa-eye"></i> Ver Detalhes
+                            </button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Refrigeador Top Mounted 413L</h3>
+                        <div class="produto-specs">
+                            <span><i class="fas fa-snowflake"></i> 413 Litros</span>
+                            <span><i class="fas fa-leaf"></i> Frost Free</span>
+                            <span><i class="fas fa-star"></i> Classe A</span>
+                        </div>
+                        <p class="produto-descricao">Refrigerador Philco 413 Litros Top Mounted PRF501TI.</p>
+                        <div class="produto-estado">
+                            <div class="estado-bar">
+                                <div class="estado-fill" style="width: 92%;"></div>
+                            </div>
+                            <span>Estado: Excelente (92%)</span>
+                        </div>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 3.419,91</span>
+                            <span class="preco-atual">R$ 280,90</span>
+                            <span class="economia">Economia: R$ 3.139,01</span>
+                        </div>
+                        <button class="btn-comprar" onclick="interesseCompra('Refrigerador Philco 413L', '2400')">
+                            <i class="fas fa-heart"></i> Quero Ajudar Comprando
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produtos-info">
+                <div class="info-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Garantia</h4>
+                    <p>Todos os produtos têm garantia de funcionamento</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-truck"></i>
+                    <h4>Entrega</h4>
+                    <p>Entrega gratuita pelos correios</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-heart"></i>
+                    <h4>Causa</h4>
+                    <p>100% do valor para o tratamento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Ajudar Section -->
+    <section id="como-ajudar" class="como-ajudar">
+        <div class="container">
+            <h2 class="section-title">Outras Formas de Ajudar Maria</h2>
+            <div class="ajudar-grid">
+                <div class="ajudar-card">
+                    <div class="ajudar-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Doação Direta</h3>
+                    <p>Faça uma doação direta via PIX para ajudar com os custos do tratamento de Maria.</p>
+                    <div class="pix-info">
+                        <strong>PIX: ajudamaria@email.com</strong>
+                    </div>
+                    <button class="btn-ajudar" onclick="copiarPix()">
+                        <i class="fas fa-copy"></i> Copiar PIX
+                    </button>
+                </div>
+
+                <div class="ajudar-card">
+                    <div class="ajudar-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Compartilhe</h3>
+                    <p>Compartilhe esta página para que mais pessoas conheçam a história de Maria e possam ajudar.</p>
+                    </div>
+                </div>
+
+                <div class="ajudar-card">
+                    <div class="ajudar-icon">
+                        <i class="fas fa-praying-hands"></i>
+                    </div>
+                    <h3>Apoio Emocional</h3>
+                    <p>Envie uma mensagem de apoio e carinho para Maria. Sua força é fundamental neste momento.</p>
+                    <button class="btn-ajudar" onclick="enviarApoio()">
+                        <i class="fas fa-envelope-heart"></i> Enviar Apoio
+                    </button>
+                </div>
+            </div>
+
+            <div class="meta-arrecadacao">
+                <h3>Meta de Arrecadação</h3>
+                <div class="meta-info">
+                    <div class="meta-valores">
+                        <span class="valor-atual">R$ 2100,00</span>
+                        <span class="valor-meta">de R$ 30.000,00</span>
+                    </div>
+                    <div class="barra-meta">
+                        <div class="meta-progresso" style="width: 7%;">7%</div>
+                    </div>
+                    <p class="meta-restante">Faltam R$ 27.900,00 para atingir a meta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="contato-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Telefone</h3>
+                        <p>(11) 99999-9999</p>
+                        <small>WhatsApp disponível</small>
+                    </div>
+                    <div class="contato-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>ajudamaria@email.com</p>
+                        <small>Resposta em até 24h</small>
+                    </div>
+                    <div class="contato-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Localização</h3>
+                        <p>São Paulo - SP</p>
+                        <small>Entrega local disponível</small>
+                    </div>
+                    <div class="contato-card">
+                        <i class="fab fa-instagram"></i>
+                        <h3>Instagram</h3>
+                        <p>@ajudamaria2024</p>
+                        <small>Acompanhe o tratamento</small>
+                    </div>
+                </div>
+                <form class="contato-form" onsubmit="enviarMensagem(event)">
+                    <h3>Envie uma Mensagem</h3>
+                    <div class="form-row">
+                        <input type="text" placeholder="Seu Nome" required>
+                        <input type="email" placeholder="Seu Email" required>
+                    </div>
+                    <input type="tel" placeholder="Seu Telefone (WhatsApp)">
+                    <select required>
+                        <option value="">Motivo do contato</option>
+                        <option value="compra">Interesse em comprar produto</option>
+                        <option value="doacao">Fazer doação</option>
+                        <option value="apoio">Enviar apoio</option>
+                        <option value="duvida">Tirar dúvida</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn-enviar">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-heart"></i> Ajude Maria</h3>
+                    <p>Juntos na luta contra o câncer. Cada gesto de solidariedade faz a diferença na vida de Maria.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Produtos Disponíveis</h4>
+                    <ul>
+                        <li><a href="#produtos">Smart TV 50" 4K</a></li>
+                        <li><a href="#produtos">Air Fryer 5.5L</a></li>
+                        <li><a href="#produtos">Microondas 20L</a></li>
+                        <li><a href="#produtos">Geladeira 400L</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informações</h4>
+                    <p><i class="fas fa-shield-alt"></i> Produtos com garantia</p>
+                    <p><i class="fas fa-truck"></i> Entrega gratuita (SP)</p>
+                    <p><i class="fas fa-heart"></i> 100% para o tratamento</p>
+                    <p><i class="fas fa-handshake"></i> Preços negociáveis</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato Rápido</h4>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                    <p><i class="fas fa-envelope"></i> ajudamaria@email.com</p>
+                    <p><i class="fas fa-credit-card"></i> PIX: ajudamaria@email.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ajude Maria. Desenvolvido com <i class="fas fa-heart"></i> por voluntários</p>
+                <p>Transparência total: 100% dos valores arrecadados são destinados ao tratamento de Maria</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-content-inner"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
