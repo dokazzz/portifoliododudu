@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&V Games - Loja Gamer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-gamepad"></i>
+                <span class="brand-text">D&V Games</span>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#produtos" class="nav-link">Produtos</a>
+                <a href="#categorias" class="nav-link">Categorias</a>
+                <a href="#ofertas" class="nav-link">Ofertas</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="login-btn">Login</button>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        🎮 Loja Gamer #1 do Brasil
+                    </div>
+                    <h1 class="hero-title">
+                        Eleve Seu <span class="gradient-text">Game</span> ao Próximo Nível
+                    </h1>
+                    <p class="hero-description">
+                        Descubra os melhores produtos gamer com preços incríveis. Periféricos, hardware e acessórios das melhores marcas.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Comprar Agora
+                        </button>
+                        <button class="btn btn-outline">Ver Catálogo</button>
+                    </div>
+
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <span>Frete Grátis</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <span>Entrega Rápida</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-trophy"></i>
+                            <span>Garantia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="hero-image-bg"></div>
+                    <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=600&h=500&fit=crop" alt="Setup Gamer" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos em Destaque -->
+    <section id="produtos" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Produtos em Destaque</h2>
+                <p>Os produtos mais vendidos e bem avaliados pelos gamers</p>
+            </div>
+
+            <div class="products-grid" id="products-container">
+                <!-- Produtos serão carregados via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorias -->
+    <section id="categorias" class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Categorias</h2>
+                <p>Encontre exatamente o que você precisa</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card" data-category="headsets">
+                    <i class="fas fa-headphones"></i>
+                    <h3>Headsets</h3>
+                    <p>120+ produtos</p>
+                </div>
+                <div class="category-card" data-category="teclados">
+                    <i class="fas fa-keyboard"></i>
+                    <h3>Teclados</h3>
+                    <p>85+ produtos</p>
+                </div>
+                <div class="category-card" data-category="mouses">
+                    <i class="fas fa-computer-mouse"></i>
+                    <h3>Mouses</h3>
+                    <p>95+ produtos</p>
+                </div>
+                <div class="category-card" data-category="monitores">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Monitores</h3>
+                    <p>60+ produtos</p>
+                </div>
+                <div class="category-card" data-category="hardware">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Hardware</h3>
+                    <p>200+ produtos</p>
+                </div>
+                <div class="category-card" data-category="controles">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Controles</h3>
+                    <p>45+ produtos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas Especiais -->
+    <section id="ofertas" class="offers-section">
+        <div class="container">
+            <div class="offer-banner">
+                <h2>🔥 Mega Promoção Gamer</h2>
+                <p>Até 50% OFF em produtos selecionados + Frete Grátis para todo o Brasil</p>
+                <div class="offer-buttons">
+                    <button class="btn btn-white">Ver Ofertas</button>
+                    <button class="btn btn-outline-white">Cadastrar para Alertas</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Fique por Dentro das Novidades</h2>
+                <p>Receba ofertas exclusivas, lançamentos e dicas gamer direto no seu email</p>
+                
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Seu melhor email" required>
+                    <button type="submit" class="btn btn-primary">Inscrever-se</button>
+                </form>
+                
+                <p class="newsletter-disclaimer">Não enviamos spam. Cancele quando quiser.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-gamepad"></i>
+                        <span>GameZone</span>
+                    </div>
+                    <p>A melhor loja de produtos gamer do Brasil. Qualidade, preço e atendimento excepcionais.</p>
+                    <div class="footer-stat">
+                        <i class="fas fa-users"></i>
+                        <span>Mais de 50.000 clientes satisfeitos</span>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Produtos</h3>
+                    <ul>
+                        <li><a href="#">Headsets</a></li>
+                        <li><a href="#">Teclados</a></li>
+                        <li><a href="#">Mouses</a></li>
+                        <li><a href="#">Monitores</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Garantia</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 D&V Games. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Carrinho de Compras</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    <strong>Total: R$ <span id="cart-total">0,00</span></strong>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="clear-cart">Limpar Carrinho</button>
+                <button class="btn btn-primary">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
